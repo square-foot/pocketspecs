@@ -1,5 +1,7 @@
 # pocketspecs
 
+Version 0.508 
+
 (c) Sabu Francis Aug 5, 2024
 
 Pocket Specs is a simple, yet sophisticated tool for developers working with Pocketbase SaaS applications. 
@@ -13,6 +15,7 @@ Here are its key strengths:
  * Commenting: It encourages commenting right across the project.
  * Code Reusability: It allows for creating reusable patterns stored in separate files.
  * Integration with Code Editors: It works well with code editors like VS Code, providing auto-completion and syntax highlighting. 
+ * It helps in developing an SRS (Software Requirement Specifications) that smoothly goes onto becoming the code too.
 
 
 Not open source

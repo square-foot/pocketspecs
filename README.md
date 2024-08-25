@@ -7,12 +7,12 @@ It offers a unique approach that combines code generation with iterative develop
 
 Here are its key strengths:
 
-Reduced Code Writing: Pocket Specs can potentially reduce the amount of code a developer needs to write by up to 50%.
-Iterative Development: It allows for a "Kaizen" style of development, where functionality can be added incrementally.
-Separation of Concerns: It enforces a disciplined approach by separating route definitions, event handlers, and utility functions.
-Commenting: It encourages commenting right across the project.
-Code Reusability: It allows for creating reusable patterns stored in separate files.
-Integration with Code Editors: It works well with code editors like VS Code, providing auto-completion and syntax highlighting. 
+ * Reduced Code Writing: Pocket Specs can potentially reduce the amount of code a developer needs to write by up to 50%.
+ * Iterative Development: It allows for a "Kaizen" style of development, where functionality can be added incrementally.
+ * Separation of Concerns: It enforces a disciplined approach by separating route definitions, event handlers, and utility functions.
+ * Commenting: It encourages commenting right across the project.
+ * Code Reusability: It allows for creating reusable patterns stored in separate files.
+ * Integration with Code Editors: It works well with code editors like VS Code, providing auto-completion and syntax highlighting. 
 
 
 Not open source

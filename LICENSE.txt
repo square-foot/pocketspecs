@@ -1,8 +1,9 @@
-LICENSE and Terms of Service
+Pocket Specs LICENSE and Terms of Service
+=========================================
 
-Copyright: This software named "Pocket Specs" is copyrighted to Sabu Francis, of Navi Mumbai, India (Author)
+Copyright: This software named "Pocket Specs" is copyrighted to Sabu Francis, of Navi Mumbai, India (Author) - 2024
 
-Use of Software: This software is provided "as is" without warranty of any kind. Users may not reverse engineer, decompile, or disassemble the software.
+Use of Software: This software is provided "as is" without warranty of any kind. Users are not allowed to reverse engineer, decompile, or disassemble the software.
 
 Distribution: Redistribution or inclusion of this software in other software packages is prohibited without prior written permission.
 
@@ -14,11 +15,11 @@ Advertisements:  Donors who pay more than or equal to $50 can show Advertisement
 
 Additional Terms of Service: The author abides by the Indian Information Technology Act, 2000 (IT Act), including all amendments and regulations. Users are required to comply with the provisions of the IT Act, particularly those related to prohibited activities. By using this software, users agree not to engage in any activities that would violate the IT Act, such as:
 
-    Cybercrime: Any activity that involves the use of a computer system to commit a crime, including but not limited to hacking, phishing, or identity theft.
-    Intellectual property infringement: Infringing on the copyrights, trademarks, or other intellectual property rights of others.
-    Defamation: Making false and harmful statements about individuals or entities.
-    Harassment: Engaging in any form of harassment, including cyberbullying or stalking.
-    Spamming: Sending unsolicited electronic messages to others.
+  * Cybercrime: Any activity that involves the use of a computer system to commit a crime, including but not limited to hacking, phishing, or identity theft.
+  * Intellectual property infringement: Infringing on the copyrights, trademarks, or other intellectual property rights of others.
+  * Defamation: Making false and harmful statements about individuals or entities.
+  * Harassment: Engaging in any form of harassment, including cyberbullying or stalking.
+  * Spamming: Sending unsolicited electronic messages to others.
 
 The author reserves the right to suspend or terminate a user's access to the software if they are found to be violating these terms of service or the IT Act. 
 

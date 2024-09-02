@@ -14,7 +14,7 @@ try{ _arg3_ = $app.dao().findRecordsByFilter(
    filter,sort,limit,offset 
   )
   _arg4_ = true
-} catch(e){ _arg4_: false }
+} catch(e){ _arg4_ = false }
 
 } else {
     try{ _arg3_ = $app.dao().findRecordsByFilter(
@@ -22,11 +22,32 @@ try{ _arg3_ = $app.dao().findRecordsByFilter(
        filter 
       )
       _arg4_ = true
-    } catch(e){ _arg4_: false }
+    } catch(e){ _arg4_ =  false }
            
 }
 
+if(_arg4_){
+const collectionDef = $app.dao().findCollectionByNameOrId(_arg1_)
+const relationList = []
+const schemaArray = JSON.parse(JSON.stringify(collectionDef.schema))
+
+schemaArray.forEach((e)=>{
+    if(e.type == "relation"){
+      relationList.push(e.name)
+      }
+    }
+   )
+
 if(_arg3_){
+
+  _arg3_.forEach((eachRec)=>{
+    
+    if(relationList.length >0){
+      $app.dao().expandRecord(eachRec, relationList, null);
+      }
+      
+  });
+    
     _arg3_ = JSON.parse(JSON.stringify(_arg3_));
    _arg3_.forEach((eachRec)=>{ 
     for (const key in eachRec){
@@ -37,6 +58,7 @@ if(_arg3_){
           eachRec[key]=myDate;
        } 
     }
-  });
+   });
+ }
 
 }

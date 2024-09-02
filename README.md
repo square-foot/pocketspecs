@@ -2,7 +2,7 @@
 
 Version 0.611
 
-(c) Sabu Francis Aug 5, 2024
+(c) Sabu Francis - 2024. All rights reserved.
 
 Pocket Specs is a simple, yet sophisticated tool for developers working with Pocketbase SaaS applications. 
 It offers a unique approach that combines code generation with iterative development. 
@@ -51,6 +51,6 @@ Feedback welcome: support@sabufrancis.com
 
 Sabu Francis 
 
-Last changed: Sept 2, 2024. India
-Last changed: Aug 25, 2024. India
-
+ * Last changed: Sept 2, 2024. India
+ * Last changed: Aug 25, 2024. India
+ * Started: Aug 5, 2024. India

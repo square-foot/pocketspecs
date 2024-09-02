@@ -1,6 +1,6 @@
 # pocketspecs
 
-Version 0.508 
+Version 0.611
 
 (c) Sabu Francis Aug 5, 2024
 
@@ -36,7 +36,7 @@ IMPORTANT: Download the entire  repository as a zip file
 Extract the zip file into a Windows computer (Version 8 or >)
 NO registry stuff. To uninstall, just delete the folder and its contents.
 
-Make sure that you keep the folder where pocketspecs.exe exists on the PATH
+Make sure that you keep the folder where pocketspecs.exe exists on the PATH.
 
 A sample project is also present in the zip file. Extract that project's zip file
 and run the build.bat file 
@@ -51,4 +51,6 @@ Feedback welcome: support@sabufrancis.com
 
 Sabu Francis 
 
+Last changed: Sept 2, 2024. India
 Last changed: Aug 25, 2024. India
+

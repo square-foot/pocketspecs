@@ -1,0 +1,3 @@
+0.611
+Prior to this, the utility functions 'utl(_)' were being generated as utils.pb.js but that is 
+evidently not correct. So now PocketSpecs generates utils.js, which works just fine.

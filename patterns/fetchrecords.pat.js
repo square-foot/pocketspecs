@@ -52,9 +52,9 @@ if(_arg3_){
    _arg3_.forEach((eachRec)=>{ 
     for (const key in eachRec){
       if(key.indexOf('ts_') == 0){ //if any field starts with ts_ it means it's a unix timestamp
-          const myUnixTimestamp = eachRec[key]; // start with a Unix timestamp
-          const myDate = new Date(myUnixTimestamp * 1000); // convert timestamp to milliseconds and construct Date object
-          // will print "Thu Aug 10 2023 01:13:20" followed by the local timezone on browser console
+          const myUnixTimestamp = eachRec[key]; // start with a Unix timestamp. Value must be numeric!
+          const myDate = utils.convertTSToLocal(myUnixTimestamp);
+          
           eachRec[key]=myDate;
        } 
     }

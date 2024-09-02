@@ -13,6 +13,7 @@ _arg3_ = $template.loadFiles(
 if(rendObj.opt.renderhtml){
    _arg3_ = _arg3_.replaceAll('&lt;','<');
    _arg3_ = _arg3_.replaceAll('&gt;','>');
+   _arg3_ = _arg3_.replaceAll('&amp;','&');
    _arg3_ = _arg3_.replaceAll('<script','');
    
 }

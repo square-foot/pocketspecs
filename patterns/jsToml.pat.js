@@ -15,12 +15,12 @@ try{
     //to json:  https://github.com/sclevine/yj
     
     const cmd = $os.exec('./cvrt_json_toml.sh',_arg2_,inpfile); 
-   _arg3_ = String.fromCharCode(...cmd.output());
+    _arg3_ = String.fromCharCode(...cmd.output());
     $os.remove(inpfile);
    
     _arg4_ = true;
     } catch(ee){
         console.log(ee);
         _arg4_  = false;
-        return c.string(200,'Error in conversion');
+       
     }

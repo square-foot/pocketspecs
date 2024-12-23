@@ -26,19 +26,48 @@ try{ _arg3_ = $app.dao().findRecordsByFilter(
            
 }
 
-if(_arg4_){
-const collectionDef = $app.dao().findCollectionByNameOrId(_arg1_)
-const relationList = []
-const schemaArray = JSON.parse(JSON.stringify(collectionDef.schema))
 
-schemaArray.forEach((e)=>{
+
+
+if(_arg4_){
+
+  if(_arg2_.info){
+    let filteredRecs = [] 
+    _arg3_.forEach((eachRec)=>{
+         let theRule = eachRec.collection().viewRule;
+         if(_arg2_.rule){
+         switch(_arg2_.rule){
+            case "create":
+              theRule = eachRec.collection().createRule;
+              break;
+            case "update":
+              theRule = eachRec.collection().updateRule;
+              break;
+            case "delete":
+              theRule = eachRec.collection().deleteRule;
+              break;
+          }
+        } 
+  
+       if($app.dao().canAccessRecord(eachRec, _arg2_.info, theRule)){
+          filteredRecs.push(eachRec)
+          }
+      });
+  
+    _arg3_ = filteredRecs;
+  } //We made sure that the records found are all accessible by the user.
+  
+
+  const collectionDef = $app.dao().findCollectionByNameOrId(_arg1_)
+  const relationList = []
+  const schemaArray = JSON.parse(JSON.stringify(collectionDef.schema))
+ 
+  schemaArray.forEach((e)=>{
     if(e.type == "relation"){
       relationList.push(e.name)
       }
     }
    )
-
-if(_arg3_){
 
   _arg3_.forEach((eachRec)=>{
     
@@ -47,7 +76,7 @@ if(_arg3_){
       }
       
   });
-    
+    //finally the 3rd arg is the array of records that will be returned as plain JS object array (not PB record objects array)
     _arg3_ = JSON.parse(JSON.stringify(_arg3_));
    _arg3_.forEach((eachRec)=>{ 
     for (const key in eachRec){
@@ -58,7 +87,7 @@ if(_arg3_){
           eachRec[key]=myDate;
        } 
     }
-   });
- }
+   });  
+ 
 
 }

@@ -7,6 +7,9 @@
 
     if(_arg2_ == "-jt"){
         inpfile += '.json';    
+        console.log("The input file is "+inpfile);
+           
+
     $os.writeFile(inpfile, JSON.stringify(_arg1_), 777);
     } else {
         inpfile += '.toml';
@@ -27,5 +30,5 @@
         _arg4_  = false;
     }
     try {
-        $os.remove(inpfile);
+      //  $os.remove(inpfile);
        } catch(ee){;}
